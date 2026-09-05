@@ -1,3 +1,6 @@
+@use "./themes/dark.scss";
+@use "./themes/light.scss";
+
 body {
   margin: 0;
   padding: 0;
@@ -8,4 +11,8 @@ body {
 
   background: rgb(19, 30, 43);
   color: #ccc;
+  // background: var(--bg-color);
+  // color: var(--bg-color-inverted);
+}
+main {
 }
