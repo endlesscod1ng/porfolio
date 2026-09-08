@@ -9,10 +9,10 @@ export const Services = ({ className }: ServicesProps) => {
   return (
     <Container className={`${s.services} ${className ?? ""}`}>
       <h3>my services</h3>
-      <span>
+      <p>
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
         sint. Velit officia consequat duis enim velit mollit. lorem ipsum
-      </span>
+      </p>
       <div className={`${s.serviceItem}`}>
         <div>
           <img

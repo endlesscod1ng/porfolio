@@ -1,3 +1,9 @@
+section {
+  &.container {
+    padding: 35px 0;
+  }
+}
+
 .container {
   width: 100%;
   min-width: var(--min-width);

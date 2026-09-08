@@ -8,7 +8,10 @@ interface FooterProps {
 export const Footer = ({ className }: FooterProps) => {
   return (
     <footer className={`${s.footer} ${className ?? ""}`}>
-      <Container>Footer</Container>
+      <Container TagName="div">
+        {" "}
+        &copy; {new Date().getFullYear()} All Rights Reserved.Ojjomedia
+      </Container>
     </footer>
   );
 };

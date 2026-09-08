@@ -13,11 +13,11 @@ export const Banner = ({ className }: BannerProps) => {
         <div>
           <h2>I’m Rayan Adlrdard </h2>
           <h1>Front-end Developer </h1>
-          <span>
+          <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et,
             volutpat feugiat placerat lobortis. Natoque rutrum semper sed
             suspendisse nunc lectus.
-          </span>
+          </p>
           <AppButton>hire me</AppButton>
         </div>
         <div className={`${s.imgContainer}`}>

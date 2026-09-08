@@ -1,0 +1,10 @@
+.footer {
+  height: var(--footer-height);
+  background: var(--bg-color-secondary);
+  display: flex;
+  align-items: center;
+  & > div {
+    display: flex;
+    justify-content: center;
+  }
+}
