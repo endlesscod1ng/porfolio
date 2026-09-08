@@ -1,17 +1,13 @@
 .header {
-  width: 100%;
-  height: 80px;
+  height: var(--header-height);
 
-  background: #ccc;
+  background: var(--bg-color-secondary);
   color: rgb(19, 30, 43);
 
   display: flex;
   align-items: center;
 }
-.continer {
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
+.container {
   display: flex;
   justify-content: space-between;
   align-items: center;

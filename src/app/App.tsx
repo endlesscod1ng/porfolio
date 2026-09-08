@@ -1,12 +1,11 @@
 import { Route, Routes } from "react-router";
 import { routesConfig } from "@/shared/config/routesConfig";
-import { Header } from "@/widgets/Header";
+import { Header } from "@/widgets/Header/Header";
 import { HomePage } from "@/pages/HomePage";
-// import "@/app/styles/index.scss";
 
 function App() {
   return (
-    <div className={`dark`}>
+    <div className={`app light`}>
       <Header />
       <main>
         <Routes>

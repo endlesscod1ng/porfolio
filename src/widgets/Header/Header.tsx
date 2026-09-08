@@ -1,7 +1,7 @@
-import { Link } from "react-router";
 import s from "./Header.module.scss";
 import { AppLink } from "@/shared/ui/AppLink/AppLink";
 import { routesConfig } from "@/shared/config/routesConfig";
+import { Container } from "@/shared/ui/Container/Container";
 
 interface HeaderProps {
   className?: string;
@@ -10,7 +10,10 @@ interface HeaderProps {
 export const Header = ({ className }: HeaderProps) => {
   return (
     <header className={`${s.header} ${className ?? ""}`}>
-      <div className={`${s.continer}`}>
+      <Container
+        TagName="div"
+        className={`${s.container}`}
+      >
         <AppLink to={"/"}>Logo</AppLink>
         <nav className={`${s.nav}`}>
           {routesConfig.map((l) => {
@@ -25,7 +28,7 @@ export const Header = ({ className }: HeaderProps) => {
             );
           })}
         </nav>
-      </div>
+      </Container>
     </header>
   );
 };
