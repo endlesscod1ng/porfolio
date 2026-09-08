@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router";
 import { routesConfig } from "@/shared/config/routesConfig";
 import { Header } from "@/widgets/Header/Header";
 import { HomePage } from "@/pages/HomePage";
+import { Footer } from "@/widgets/Footer/Footer";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           />
         </Routes>
       </main>
+      <Footer />
     </div>
   );
 }
