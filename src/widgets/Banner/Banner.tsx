@@ -9,8 +9,8 @@ interface BannerProps {
 export const Banner = ({ className }: BannerProps) => {
   return (
     <section className={`${s.banner} ${className ?? ""}`}>
-      <Container TagName="div">
-        <div>
+      <Container TagName="div" className={`${s.container}`}>
+        <div className={`${s.content}`}>
           <h2>I’m Rayan Adlrdard </h2>
           <h1>Front-end Developer </h1>
           <p>

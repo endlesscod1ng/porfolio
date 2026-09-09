@@ -13,15 +13,40 @@ export const Services = ({ className }: ServicesProps) => {
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
         sint. Velit officia consequat duis enim velit mollit. lorem ipsum
       </p>
-      <div className={`${s.serviceItem}`}>
-        <div>
-          <img
-            src="#"
-            alt="service"
-          />
-          <h5>web development</h5>
-          <p>blog, e-commerce</p>
-        </div>
+      <div className={`${s.list}`}>
+        {[
+          {
+            imgUrl: "#",
+            alt: "service",
+            title: "web development",
+            desc: "blog, e-commerce",
+          },
+          {
+            imgUrl: "#",
+            alt: "service",
+            title: "web development",
+            desc: "blog, e-commerce",
+          },
+          {
+            imgUrl: "#",
+            alt: "service",
+            title: "web development",
+            desc: "blog, e-commerce",
+          },
+        ].map((sItem) => {
+          return (
+            <div className={`${s.serviceItem}`}>
+              <div>
+                <img
+                  src={sItem.imgUrl}
+                  alt={sItem.alt}
+                />
+                <h5>{sItem.title}</h5>
+                <p>{sItem.desc}</p>
+              </div>
+            </div>
+          );
+        })}
       </div>
     </Container>
   );

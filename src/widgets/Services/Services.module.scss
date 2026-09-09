@@ -1,5 +1,21 @@
-.serviceItem {
-  width: 310px;
-  height: 225px;
-  background: var(--bg-color-secondary);
+.services {
+  text-align: center;
+  .list {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .serviceItem {
+    max-width: 310px;
+    width: 100%;
+    height: 225px;
+
+    background: var(--bg-color-secondary);
+    padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }

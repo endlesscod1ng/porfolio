@@ -16,8 +16,8 @@ export const HomePage = ({ className }: HomePageProps) => {
       <Banner />
       <Services />
       <Price />
-      <Reviews />
       <Projects />
+      {/* <Reviews /> */}
       <Contacts />
     </div>
   );
