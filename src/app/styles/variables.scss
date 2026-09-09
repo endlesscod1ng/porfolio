@@ -55,8 +55,12 @@
   //   var(--font-family-main);
 
   --font-size-s: 16px;
-  --font-line-s: 24px;
+  --font-line-s: 1.2;
   --font-s: var(--font-size-s) / var(--font-line-s) var(--font-family-main);
+
+  --font-size-xl: 32px;
+  --font-line-xl: 1.2;
+  --font-xl: var(--font-size-xl) / var(--font-line-xl) var(--font-family-main);
 
   --font-size-h1: 48px;
   --font-line-h1: 1.2;

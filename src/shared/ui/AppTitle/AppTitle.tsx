@@ -2,7 +2,7 @@ import s from "./AppTitle.module.scss";
 
 interface AppTitleProps {
   children: string;
-  TagName: "h1" | "h2" | "h3" | "h4" | "h5";
+  TagName?: "h1" | "h2" | "h3" | "h4" | "h5";
   className?: string;
 }
 

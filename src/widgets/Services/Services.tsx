@@ -1,5 +1,6 @@
 import { Container } from "@/shared/ui/Container/Container";
 import s from "./Services.module.scss";
+import { AppTitle } from "@/shared/ui/AppTitle/AppTitle";
 
 interface ServicesProps {
   className?: string;
@@ -8,7 +9,7 @@ interface ServicesProps {
 export const Services = ({ className }: ServicesProps) => {
   return (
     <Container className={`${s.services} ${className ?? ""}`}>
-      <h3>my services</h3>
+      <AppTitle>my services</AppTitle>
       <p>
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
         sint. Velit officia consequat duis enim velit mollit. lorem ipsum

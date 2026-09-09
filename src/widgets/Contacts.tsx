@@ -2,6 +2,7 @@ import { Container } from "@/shared/ui/Container/Container";
 import s from "./Contacts.module.scss";
 import { AppButton } from "@/shared/ui/AppButton/AppButton";
 import { AppInput } from "@/shared/ui/AppInput/AppInput";
+import { AppTitle } from "@/shared/ui/AppTitle/AppTitle";
 
 interface ContactsProps {
   className?: string;
@@ -11,7 +12,7 @@ export const Contacts = ({ className }: ContactsProps) => {
   return (
     <Container className={`${s.contacts} ${className ?? ""}`}>
       <div className={`${s.formContainer}`}>
-        <h3>Leave us your info</h3>
+        <AppTitle>Leave us your info</AppTitle>
         <form
           className={`${s.form}`}
           action=""
@@ -45,7 +46,7 @@ export const Contacts = ({ className }: ContactsProps) => {
       </div>
 
       <div className={`${s.info}`}>
-        <h3>Contact information</h3>
+        <AppTitle>Contact information</AppTitle>
         <div className={`${s.list}`}>
           <div className={`${s.card}`}>
             <img

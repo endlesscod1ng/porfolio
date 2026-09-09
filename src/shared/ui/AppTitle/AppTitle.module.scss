@@ -11,4 +11,10 @@
     font-style: Bold;
     font-weight: 700;
   }
+  &,
+  h3 {
+    font: var(--font-xl);
+    font-style: Bold;
+    font-weight: 700;
+  }
 }

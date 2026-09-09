@@ -1,6 +1,7 @@
 import { Container } from "@/shared/ui/Container/Container";
 import s from "./Price.module.scss";
 import { AppButton } from "@/shared/ui/AppButton/AppButton";
+import { AppTitle } from "@/shared/ui/AppTitle/AppTitle";
 
 interface PriceProps {
   className?: string;
@@ -9,7 +10,7 @@ interface PriceProps {
 export const Price = ({ className }: PriceProps) => {
   return (
     <Container className={`${s.price} ${className ?? ""}`}>
-      <h3>Price plans</h3>
+      <AppTitle>Price plans</AppTitle>
       <p>
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
         sint. Velit officia consequat duis enim velit mollit. lorem ipsum
