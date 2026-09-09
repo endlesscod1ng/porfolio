@@ -1,6 +1,7 @@
 import { Container } from "@/shared/ui/Container/Container";
 import s from "./Contacts.module.scss";
 import { AppButton } from "@/shared/ui/AppButton/AppButton";
+import { AppInput } from "@/shared/ui/AppInput/AppInput";
 
 interface ContactsProps {
   className?: string;
@@ -17,25 +18,25 @@ export const Contacts = ({ className }: ContactsProps) => {
           // onChange={(e) => e.preventDefault()}
         >
           <label htmlFor="">Your Full Name ( Required)</label>
-          <input
+          <AppInput
             type="text"
             placeholder="Your Full Name ( Required)"
           />
 
           <label htmlFor="">Your Email ( Required)</label>
-          <input
+          <AppInput
             type="text"
             placeholder="Your Email ( Required)"
           />
 
           <label htmlFor="">Subject</label>
-          <input
+          <AppInput
             type="text"
             placeholder="Subject"
           />
 
           <label htmlFor="">Your Message</label>
-          <input
+          <AppInput
             type="text"
             placeholder="Your Message"
           />
@@ -104,8 +105,6 @@ export const Contacts = ({ className }: ContactsProps) => {
           </div>
         </div>
       </div>
-
-      
     </Container>
   );
 };
