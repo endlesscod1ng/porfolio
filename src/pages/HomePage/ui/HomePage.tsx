@@ -17,7 +17,7 @@ export const HomePage = ({ className }: HomePageProps) => {
       <Services />
       <Price />
       <Projects />
-      {/* <Reviews /> */}
+      <Reviews />
       <Contacts />
     </div>
   );

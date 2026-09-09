@@ -1,0 +1,14 @@
+.appTitle {
+  &,
+  h1 {
+    font: var(--font-h1);
+    font-style: Bold;
+    font-weight: 700;
+  }
+  &,
+  h2 {
+    font: var(--font-h1);
+    font-style: Bold;
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,35 @@
+.contacts {
+  display: flex;
+  gap: 30px;
+  h3 {
+    text-align: center;
+  }
+  input {
+    background: var(--bg-color-primary);
+    height: 50px;
+  }
+  .formContainer {
+    max-width: 50%;
+    width: 100%;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px;
+    background: var(--bg-color-secondary);
+  }
+  .info {
+    max-width: 50%;
+    width: 100%;
+  }
+  .card {
+    background: var(--bg-color-secondary);
+    padding: 25px;
+  }
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
