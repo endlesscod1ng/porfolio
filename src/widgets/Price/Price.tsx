@@ -9,7 +9,7 @@ interface PriceProps {
 
 export const Price = ({ className }: PriceProps) => {
   return (
-    <Container className={`${s.price} ${className ?? ""}`}>
+    <Container className={[s.price, className].filter(Boolean).join(" ")}>
       <AppTitle>Price plans</AppTitle>
       <p>
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet

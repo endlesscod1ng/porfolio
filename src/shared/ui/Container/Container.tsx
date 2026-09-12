@@ -13,7 +13,7 @@ export const Container = ({
   className,
 }: ContainerProps) => {
   return (
-    <TagName className={`${s.container} ${className ?? ""}`}>
+    <TagName className={[s.container, className].filter(Boolean).join(" ")}>
       {children}
     </TagName>
   );

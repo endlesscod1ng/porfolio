@@ -7,4 +7,7 @@
     transition: color var(--transition-delay) linear;
     color: var(--color-accented);
   }
+  &.active {
+    color: var(--color-accented);
+  }
 }

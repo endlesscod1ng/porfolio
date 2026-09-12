@@ -10,7 +10,7 @@ interface ContactsProps {
 
 export const Contacts = ({ className }: ContactsProps) => {
   return (
-    <Container className={`${s.contacts} ${className ?? ""}`}>
+    <Container className={[s.contacts, className].filter(Boolean).join(" ")}>
       <div className={`${s.formContainer}`}>
         <AppTitle>Leave us your info</AppTitle>
         <form

@@ -1,4 +1,5 @@
 .appTitle {
+  text-transform: capitalize;
   &,
   h1 {
     font: var(--font-h1);

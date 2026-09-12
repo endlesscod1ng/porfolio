@@ -15,7 +15,7 @@ export const AppLink = ({
   return (
     <Link
       {...otherProps}
-      className={`${s.appLink} ${className ?? ""}`}
+      className={[s.appLink, className].filter(Boolean).join(" ")}
     >
       {children}
     </Link>

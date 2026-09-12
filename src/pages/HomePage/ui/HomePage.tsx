@@ -15,7 +15,7 @@ export const HomePage = ({ className }: HomePageProps) => {
   return (
     <Page
       centered={false}
-      className={`${s.homePage} ${className ?? ""}`}
+      className={[s.homePage, className].filter(Boolean).join(" ")}
     >
       <Banner />
       <Services />

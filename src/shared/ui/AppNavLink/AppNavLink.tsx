@@ -15,7 +15,11 @@ export const AppNavLink = ({
   return (
     <NavLink
       {...otherProps}
-      className={`${s.appNavLink} ${className ?? ""}`}
+      className={({ isActive }) =>
+        [s.appNavLink, isActive ? s.active : "", className]
+          .filter(Boolean)
+          .join(" ")
+      }
     >
       {children}
     </NavLink>

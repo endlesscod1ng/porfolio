@@ -19,3 +19,8 @@ body,
 
   font-family: var(--font-family-main);
 }
+html {
+  // overflow-y: scroll;
+  // scrollbar-gutter: stable both-edges;
+  scrollbar-gutter: stable;
+}

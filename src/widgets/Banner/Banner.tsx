@@ -10,7 +10,7 @@ interface BannerProps {
 
 export const Banner = ({ className }: BannerProps) => {
   return (
-    <section className={`${s.banner} ${className ?? ""}`}>
+    <section className={[s.banner, className].filter(Boolean).join(" ")}>
       <Container
         TagName="div"
         className={`${s.container}`}

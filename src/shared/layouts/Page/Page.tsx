@@ -10,7 +10,9 @@ interface PageProps {
 export const Page = ({ children, centered = true, className }: PageProps) => {
   return (
     <div
-      className={`${s.page} ${className ?? ""} ${centered ? [s.centered] : undefined}`}
+      className={[s.page, centered ? [s.centered] : "", className]
+        .filter(Boolean)
+        .join(" ")}
     >
       {children}
     </div>

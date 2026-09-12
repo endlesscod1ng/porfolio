@@ -10,7 +10,7 @@ interface HeaderProps {
 
 export const Header = ({ className }: HeaderProps) => {
   return (
-    <header className={`${s.header} ${className ?? ""}`}>
+    <header className={[s.header, className].filter(Boolean).join(" ")}>
       <Container
         TagName="div"
         className={`${s.container}`}

@@ -8,7 +8,7 @@ interface ReviewsProps {
 
 export const Reviews = ({ className }: ReviewsProps) => {
   return (
-    <Container className={`${s.reviews} ${className ?? ""}`}>
+    <Container className={[s.reviews, className].filter(Boolean).join(" ")}>
       <AppTitle>Recommendations</AppTitle>
       <p>
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet

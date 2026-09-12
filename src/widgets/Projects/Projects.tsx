@@ -9,7 +9,7 @@ interface ProjectsProps {
 
 export const Projects = ({ className }: ProjectsProps) => {
   return (
-    <Container className={`${s.projects} ${className ?? ""}`}>
+    <Container className={[s.projects, className].filter(Boolean).join(" ")}>
       <AppTitle>Portfolio</AppTitle>
       <p>
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet

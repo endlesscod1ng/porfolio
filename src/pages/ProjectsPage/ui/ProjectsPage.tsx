@@ -7,7 +7,9 @@ interface ProjectsPageProps {
 
 export const ProjectsPage = ({ className }: ProjectsPageProps) => {
   return (
-    <Page className={`${s.projectsPage} ${className ?? ""}`}>
+    <Page className={[s.projectsPage, className]
+        .filter(Boolean)
+        .join(" ")}>
       <div>ProjectsPage</div>
     </Page>
   );

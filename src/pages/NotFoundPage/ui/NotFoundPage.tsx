@@ -9,7 +9,11 @@ interface NotFoundPageProps {
 
 export const NotFoundPage = ({ className }: NotFoundPageProps) => {
   return (
-    <Page className={`${s.notFoundPage} ${className ?? ""}`}>
+    <Page
+      className={[s.notFoundPage, className]
+        .filter(Boolean)
+        .join(" ")}
+    >
       <AppTitle>{"Page Not Found"}</AppTitle>
       <AppLink to={"/"}>{"Home"}</AppLink>
     </Page>

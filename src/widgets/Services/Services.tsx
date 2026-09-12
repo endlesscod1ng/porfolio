@@ -8,7 +8,7 @@ interface ServicesProps {
 
 export const Services = ({ className }: ServicesProps) => {
   return (
-    <Container className={`${s.services} ${className ?? ""}`}>
+    <Container className={[s.services, className].filter(Boolean).join(" ")}>
       <AppTitle>my services</AppTitle>
       <p>
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet

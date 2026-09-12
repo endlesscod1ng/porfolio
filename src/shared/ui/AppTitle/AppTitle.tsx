@@ -12,6 +12,8 @@ export const AppTitle = ({
   className,
 }: AppTitleProps) => {
   return (
-    <TagName className={`${s.appTitle} ${className ?? ""}`}>{children}</TagName>
+    <TagName className={[s.appTitle, className].filter(Boolean).join(" ")}>
+      {children}
+    </TagName>
   );
 };

@@ -18,7 +18,7 @@ export const AppInput = ({
       {...otherPoprs}
       type={type}
       placeholder={placeholder}
-      className={`${s.appInput} ${className ?? ""}`}
+      className={[s.appInput, className].filter(Boolean).join(" ")}
     />
   );
 };

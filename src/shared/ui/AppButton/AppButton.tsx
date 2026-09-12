@@ -14,7 +14,7 @@ export const AppButton = ({
   className,
 }: AppButtonProps) => {
   return (
-    <button className={`${s.appButton} ${className ?? ""} ${s[variant]}`}>
+    <button className={[s.appButton, className].filter(Boolean).join(" ")}>
       {children}
     </button>
   );

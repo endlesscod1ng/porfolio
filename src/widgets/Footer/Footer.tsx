@@ -7,7 +7,7 @@ interface FooterProps {
 
 export const Footer = ({ className }: FooterProps) => {
   return (
-    <footer className={`${s.footer} ${className ?? ""}`}>
+    <footer className={[s.footer, className].filter(Boolean).join(" ")}>
       <Container TagName="div">
         {" "}
         &copy; {new Date().getFullYear()} All Rights Reserved.Ojjomedia
