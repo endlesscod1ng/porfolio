@@ -1,13 +1,21 @@
 import type { ButtonHTMLAttributes, ReactNode } from "react";
 import s from "./AppButton.module.scss";
 
+type AppButtonVariant = "clear" | "filled";
 interface AppButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
+  variant?: AppButtonVariant;
   className?: string;
 }
 
-export const AppButton = ({ children, className }: AppButtonProps) => {
+export const AppButton = ({
+  children,
+  variant = "clear",
+  className,
+}: AppButtonProps) => {
   return (
-    <button className={`${s.appButton} ${className ?? ""}`}>{children}</button>
+    <button className={`${s.appButton} ${className ?? ""} ${s[variant]}`}>
+      {children}
+    </button>
   );
 };

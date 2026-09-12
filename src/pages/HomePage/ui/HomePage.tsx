@@ -5,6 +5,7 @@ import { Price } from "@/widgets/Price/Price";
 import { Reviews } from "@/widgets/Reviews/Reviews";
 import { Projects } from "@/widgets/Projects/Projects";
 import { Contacts } from "@/widgets/Contacts";
+import { Page } from "@/shared/layouts/Page/Page";
 
 interface HomePageProps {
   className?: string;
@@ -12,13 +13,16 @@ interface HomePageProps {
 
 export const HomePage = ({ className }: HomePageProps) => {
   return (
-    <div className={`${s.homePage} ${className ?? ""}`}>
+    <Page
+      centered={false}
+      className={`${s.homePage} ${className ?? ""}`}
+    >
       <Banner />
       <Services />
       <Price />
       <Projects />
       <Reviews />
       <Contacts />
-    </div>
+    </Page>
   );
 };

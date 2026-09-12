@@ -1,0 +1,28 @@
+.appButton {
+  cursor: pointer;
+  &.clear {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    transition: color var(--transition-delay) linear;
+    &:hover {
+      color: var(--color-accented);
+    }
+  }
+  &.filled {
+    background: var(--color-accented);
+    padding: 16px 30px;
+    border: 2px solid var(--color-accented);
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition:
+      color var(--transition-delay) linear,
+      background var(--transition-delay) linear;
+    &:hover {
+      background: transparent;
+      color: var(--color-accented);
+    }
+  }
+}

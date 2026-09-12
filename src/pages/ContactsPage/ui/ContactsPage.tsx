@@ -1,3 +1,4 @@
+import { Page } from "@/shared/layouts/Page/Page";
 import s from "./ContactsPage.module.scss";
 
 interface ContactsPageProps {
@@ -6,8 +7,8 @@ interface ContactsPageProps {
 
 export const ContactsPage = ({ className }: ContactsPageProps) => {
   return (
-    <div className={`${s.contactsPage} ${className ?? ""}`}>
+    <Page className={`${s.contactsPage} ${className ?? ""}`}>
       <div>ContactsPage</div>
-    </div>
+    </Page>
   );
 };

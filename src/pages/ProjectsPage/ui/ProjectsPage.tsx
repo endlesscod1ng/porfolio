@@ -1,3 +1,4 @@
+import { Page } from "@/shared/layouts/Page/Page";
 import s from "./ProjectsPage.module.scss";
 
 interface ProjectsPageProps {
@@ -6,8 +7,8 @@ interface ProjectsPageProps {
 
 export const ProjectsPage = ({ className }: ProjectsPageProps) => {
   return (
-    <div className={`${s.projectsPage} ${className ?? ""}`}>
+    <Page className={`${s.projectsPage} ${className ?? ""}`}>
       <div>ProjectsPage</div>
-    </div>
+    </Page>
   );
 };

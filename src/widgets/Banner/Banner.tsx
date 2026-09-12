@@ -23,7 +23,7 @@ export const Banner = ({ className }: BannerProps) => {
             volutpat feugiat placerat lobortis. Natoque rutrum semper sed
             suspendisse nunc lectus.
           </p>
-          <AppButton>hire me</AppButton>
+          <AppButton variant="filled">hire me</AppButton>
         </div>
         <img
           className={`${s.img}`}
