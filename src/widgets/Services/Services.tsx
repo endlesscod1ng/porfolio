@@ -34,9 +34,12 @@ export const Services = ({ className }: ServicesProps) => {
             title: "web development",
             desc: "blog, e-commerce",
           },
-        ].map((sItem) => {
+        ].map((sItem, i) => {
           return (
-            <div className={`${s.serviceItem}`}>
+            <div
+              key={i}
+              className={`${s.serviceItem}`}
+            >
               <div>
                 <img
                   src={sItem.imgUrl}

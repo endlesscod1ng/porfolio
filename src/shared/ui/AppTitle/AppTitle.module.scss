@@ -1,19 +1,24 @@
 .appTitle {
   text-transform: capitalize;
-  &,
-  h1 {
+  color: var(--color-text);
+
+  .accented {
+    color: var(--color-accented);
+  }
+
+  &.h1 {
     font: var(--font-h1);
     font-style: Bold;
     font-weight: 700;
   }
-  &,
-  h2 {
+
+  &.h2 {
     font: var(--font-h1);
     font-style: Bold;
     font-weight: 700;
   }
-  &,
-  h3 {
+
+  &.h3 {
     font: var(--font-xl);
     font-style: Bold;
     font-weight: 700;
