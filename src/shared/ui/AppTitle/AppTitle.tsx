@@ -1,17 +1,20 @@
 import s from "./AppTitle.module.scss";
 
+type AppTitleColorType = "primary" | "secondary";
 type AppTitleTagName = "h1" | "h2" | "h3" | "h4" | "h5";
 
 interface AppTitleProps {
   children: string;
   TagName?: AppTitleTagName;
-  className?: string;
+  colorType?: AppTitleColorType;
   accentText?: string;
+  className?: string;
 }
 
 export const AppTitle = ({
   children,
   TagName = "h3",
+  colorType = "secondary",
   className,
   accentText,
 }: AppTitleProps) => {
@@ -40,7 +43,9 @@ export const AppTitle = ({
 
   return (
     <TagName
-      className={[s.appTitle, s[TagName], className].filter(Boolean).join(" ")}
+      className={[s.appTitle, s[TagName], s[colorType], className]
+        .filter(Boolean)
+        .join(" ")}
     >
       {renderTitle()}
     </TagName>
