@@ -1,7 +1,15 @@
 @import url("./themes/dark.scss");
 @import url("./themes/light.scss");
 @import url("./variables.scss");
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
 html,
 #root,
 body,
@@ -14,10 +22,10 @@ body,
   width: 100%;
   min-width: 320px;
 
-  background: var(--bg-color-primary);
-  color: var(--color-text);
+  background: var(--color-bg-primary);
+  color: var(--color-text-primary);
 
-  font-family: var(--font-family-main);
+  font: var(--font-s);
 }
 html {
   // overflow-y: scroll;

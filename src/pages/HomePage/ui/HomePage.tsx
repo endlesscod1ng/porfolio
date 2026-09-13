@@ -18,9 +18,9 @@ export const HomePage = ({ className }: HomePageProps) => {
       className={[s.homePage, className].filter(Boolean).join(" ")}
     >
       <Banner />
+      <Projects />
       <Services />
       <Price />
-      <Projects />
       <Reviews />
       <Contacts />
     </Page>

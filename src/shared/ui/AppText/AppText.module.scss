@@ -1,0 +1,8 @@
+.appText {
+  &.primary {
+    color: var(--color-text-primary);
+  }
+  &.secondary {
+    color: var(--color-text-secondary);
+  }
+}

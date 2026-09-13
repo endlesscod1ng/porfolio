@@ -1,6 +1,6 @@
 .appTitle {
   text-transform: capitalize;
-  color: var(--color-text);
+  color: var(--color-text-secondary);
 
   .accented {
     color: var(--color-accented);
@@ -10,6 +10,7 @@
     font: var(--font-h1);
     font-style: Bold;
     font-weight: 700;
+    padding: 10px 0;
   }
 
   &.h2 {

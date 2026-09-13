@@ -1,18 +1,23 @@
 .banner {
-  background: var(--bg-color-secondary);
-  padding: 50px 0 0;
-}
-.img {
-  width: 325px;
-  height: 460px;
-  // padding: 0;
-  // margin: 0;
-  // border: none;
-  // outline: none;
-  // font-size: 0;
-}
-.container {
-  display: flex;
-  align-items: center;
-  gap: 30px;
+  background: var(--color-bg-secondary);
+  .img {
+    width: 325px;
+    height: 460px;
+    // padding: 0;
+    // margin: 0;
+    // border: none;
+    // outline: none;
+    // font-size: 0;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  .text {
+    max-width: 420px;
+    margin-bottom: 50px;
+  }
 }
