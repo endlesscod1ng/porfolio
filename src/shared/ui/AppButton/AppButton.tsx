@@ -12,9 +12,11 @@ export const AppButton = ({
   children,
   variant = "clear",
   className,
+  ...otherProps
 }: AppButtonProps) => {
   return (
     <button
+      {...otherProps}
       className={[s.appButton, s[variant], className].filter(Boolean).join(" ")}
     >
       {children}

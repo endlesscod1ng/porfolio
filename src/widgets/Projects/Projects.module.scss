@@ -6,13 +6,42 @@
     gap: 35px;
     margin-bottom: 50px;
   }
+  .activeTab {
+    color: var(--color-accented);
+  }
   .works {
     display: flex;
     justify-content: space-between;
     gap: 20px;
     flex-wrap: wrap;
+    margin-bottom: 35px;
+  }
+  .workContainer {
+    position: relative;
+    cursor: pointer;
+
+    &:hover::before {
+      opacity: 0.7;
+    }
+
+    &::before {
+      transition: opacity var(--transition-delay) linear;
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: var(--color-accented);
+      opacity: 0;
+    }
   }
   .work {
     width: 310px;
+  }
+  .link {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
   }
 }
