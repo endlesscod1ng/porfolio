@@ -1,6 +1,7 @@
 import { Container } from "@/shared/ui/Container/Container";
 import s from "./Services.module.scss";
 import { AppTitle } from "@/shared/ui/AppTitle/AppTitle";
+import { AppText } from "@/shared/ui/AppText/AppText";
 
 interface ServicesProps {
   className?: string;
@@ -10,10 +11,10 @@ export const Services = ({ className }: ServicesProps) => {
   return (
     <Container className={[s.services, className].filter(Boolean).join(" ")}>
       <AppTitle>my services</AppTitle>
-      <p>
+      <AppText fontSize="l">
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
         sint. Velit officia consequat duis enim velit mollit. lorem ipsum
-      </p>
+      </AppText>
       <div className={`${s.list}`}>
         {[
           {

@@ -2,7 +2,29 @@
   &.primary {
     color: var(--color-text-primary);
   }
+
   &.secondary {
     color: var(--color-text-secondary);
+  }
+
+  &.s {
+    font: var(--font-s);
+  }
+
+  &.m {
+    font: var(--font-m);
+  }
+
+  &.l {
+    font: var(--font-l);
+    font-style: Bold;
+    font-weight: 700;
+    margin-bottom: 50px;
+  }
+
+  &.xxl {
+    font: var(--font-xxl);
+    font-style: Bold;
+    font-weight: 700;
   }
 }

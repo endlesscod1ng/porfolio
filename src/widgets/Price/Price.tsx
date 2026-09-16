@@ -2,6 +2,7 @@ import { Container } from "@/shared/ui/Container/Container";
 import s from "./Price.module.scss";
 import { AppButton } from "@/shared/ui/AppButton/AppButton";
 import { AppTitle } from "@/shared/ui/AppTitle/AppTitle";
+import { AppText } from "@/shared/ui/AppText/AppText";
 
 interface PriceProps {
   className?: string;
@@ -11,10 +12,10 @@ export const Price = ({ className }: PriceProps) => {
   return (
     <Container className={[s.price, className].filter(Boolean).join(" ")}>
       <AppTitle>Price plans</AppTitle>
-      <p>
+      <AppText fontSize="l">
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
         sint. Velit officia consequat duis enim velit mollit. lorem ipsum
-      </p>
+      </AppText>
       <div className={`${s.list}`}>
         {[
           {
@@ -62,9 +63,12 @@ export const Price = ({ className }: PriceProps) => {
               "20 gB bandwith",
             ],
           },
-        ].map((item) => {
+        ].map((item, i) => {
           return (
-            <div className={`${s.priceItem}`}>
+            <div
+              key={i}
+              className={`${s.priceItem}`}
+            >
               <h4>{item.name}</h4>
               <p>{item.cost}</p>
               <p>{item.desc}</p>

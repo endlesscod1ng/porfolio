@@ -18,7 +18,12 @@ export const Banner = ({ className }: BannerProps) => {
         className={`${s.container}`}
       >
         <div className={`${s.content}`}>
-          <AppTitle TagName="h2">I'm Viacheslav </AppTitle>
+          <AppText
+            fontSize="xxl"
+            colorType="secondary"
+          >
+            {" I'm Viacheslav"}
+          </AppText>
           <AppTitle
             TagName="h1"
             accentText="Front-end"

@@ -1,6 +1,8 @@
 @import url("./themes/dark.scss");
 @import url("./themes/light.scss");
 @import url("./variables.scss");
+
+p,
 h1,
 h2,
 h3,
@@ -10,6 +12,7 @@ h6 {
   margin: 0;
   padding: 0;
 }
+
 html,
 #root,
 body,
@@ -27,6 +30,7 @@ body,
 
   font: var(--font-s);
 }
+
 html {
   // overflow-y: scroll;
   // scrollbar-gutter: stable both-edges;

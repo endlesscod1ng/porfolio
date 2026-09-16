@@ -1,7 +1,7 @@
 import s from "./AppTitle.module.scss";
 
 type AppTitleColorType = "primary" | "secondary";
-type AppTitleTagName = "h1" | "h2" | "h3" | "h4" | "h5";
+type AppTitleTagName = "h1" | "h2" | "h3" | "h4";
 
 interface AppTitleProps {
   children: string;
@@ -13,7 +13,7 @@ interface AppTitleProps {
 
 export const AppTitle = ({
   children,
-  TagName = "h3",
+  TagName = "h2",
   colorType = "secondary",
   className,
   accentText,
