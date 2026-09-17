@@ -1,7 +1,12 @@
 .stack {
   text-align: center;
-  .icon {
-    height: 80px;
-    width: 80px;
+  .iconList {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 40px 24px;
+    margin-top: 40px;
+  }
+  .iconList > * {
+    justify-self: center;
   }
 }

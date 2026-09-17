@@ -14,6 +14,7 @@ import TailwindIcon from "@/shared/assets/img/stack/tailwind.svg?react";
 import TypescriptIcon from "@/shared/assets/img/stack/typescript.svg?react";
 import VscodeIcon from "@/shared/assets/img/stack/vscode.svg?react";
 import VueIcon from "@/shared/assets/img/stack/vue.svg?react";
+import { AppIcon } from "@/shared/ui/AppIcon/AppIcon";
 
 interface StackProps {
   className?: string;
@@ -39,12 +40,14 @@ export const Stack = ({ className }: StackProps) => {
       <AppText fontSize="l">
         {"Technologies I’ve been working with recently"}
       </AppText>
-      {Icons.map((Icon, i) => (
-        <Icon
-          className={`${s.icon}`}
-          key={i}
-        />
-      ))}
+      <div className={`${s.iconList}`}>
+        {Icons.map((Icon, i) => (
+          <AppIcon
+            Svg={Icon}
+            key={i}
+          />
+        ))}
+      </div>
     </Container>
   );
 };

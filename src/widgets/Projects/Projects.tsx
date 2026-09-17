@@ -17,15 +17,8 @@ interface WorkListType {
   alt: string;
   tech: string[];
 }
-type TechStackType =
-  | "All"
-  | "React"
-  | "Vue"
-  | "React Native"
-  | "NodeJs"
-  | "Flutter"
-  | "Python";
-const TechStack: TechStackType[] = [
+
+const TechStack = [
   "All",
   "React",
   "Vue",
@@ -33,7 +26,10 @@ const TechStack: TechStackType[] = [
   "NodeJs",
   "Flutter",
   "Python",
-];
+] as const;
+
+type TechStackType = (typeof TechStack)[number];
+
 const workList: WorkListType[] = [
   {
     title: "Portfolio",
@@ -101,7 +97,10 @@ export const Projects = ({ className }: ProjectsProps) => {
         {workList
           .filter((w) => activeTab === "All" || w.tech.includes(activeTab))
           .map(({ title, imgSrc, alt }) => (
-            <div className={`${s.workContainer}`} key={title}>
+            <div
+              className={`${s.workContainer}`}
+              key={title}
+            >
               <AppImage
                 className={`${s.work}`}
                 alt={alt}
