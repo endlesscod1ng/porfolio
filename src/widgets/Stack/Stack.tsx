@@ -20,18 +20,18 @@ interface StackProps {
   className?: string;
 }
 const Icons = [
+  ReactIcon,
   CssIcon,
   GitIcon,
-  HtmlIcon,
-  JsIcon,
+  VueIcon,
   NodejsIcon,
-  ReactIcon,
+  JsIcon,
   ReduxIcon,
   SassIcon,
   TailwindIcon,
   TypescriptIcon,
+  HtmlIcon,
   VscodeIcon,
-  VueIcon,
 ];
 export const Stack = ({ className }: StackProps) => {
   return (

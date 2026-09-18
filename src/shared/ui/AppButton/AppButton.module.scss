@@ -1,6 +1,9 @@
 .appButton {
+  color: var(--color-text-secondary);
+
   cursor: pointer;
   &.clear {
+    font: var(--font-m);
     margin: 0;
     padding: 0;
     border: none;

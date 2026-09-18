@@ -1,21 +1,23 @@
 import s from "./Header.module.scss";
-import { AppLink } from "@/shared/ui/AppLink/AppLink";
+
 import { routesConfig } from "@/shared/config/routesConfig";
 import { Container } from "@/shared/ui/Container/Container";
 import { AppNavLink } from "@/shared/ui/AppNavLink/AppNavLink";
+import { AppButton } from "@/shared/ui/AppButton/AppButton";
 
 interface HeaderProps {
+  changeTheme: () => void;
   className?: string;
 }
 
-export const Header = ({ className }: HeaderProps) => {
+export const Header = ({ changeTheme, className }: HeaderProps) => {
   return (
     <header className={[s.header, className].filter(Boolean).join(" ")}>
       <Container
         TagName="div"
         className={`${s.container}`}
       >
-        <AppLink to={"/"}>Logo</AppLink>
+        <AppButton onClick={changeTheme}>Theme</AppButton>
         <nav className={`${s.nav}`}>
           {routesConfig.map((l) => {
             return (
