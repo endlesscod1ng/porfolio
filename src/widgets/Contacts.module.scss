@@ -20,6 +20,9 @@
     max-width: 50%;
     width: 100%;
   }
+  .btn {
+    align-self: start;
+  }
   .card {
     background: var(--color-bg-secondary);
     padding: 25px;

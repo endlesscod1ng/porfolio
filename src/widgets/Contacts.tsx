@@ -41,7 +41,13 @@ export const Contacts = ({ className }: ContactsProps) => {
             type="text"
             placeholder="Your Message"
           />
-          <AppButton>send message</AppButton>
+          <AppButton
+            className={`${s.btn}`}
+            variant="filled"
+            size="s"
+          >
+            send message
+          </AppButton>
         </form>
       </div>
 

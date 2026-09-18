@@ -1,4 +1,13 @@
+.appInputContainer {
+}
 .appInput {
+  // align-self: ;
   background: var(--color-bg-primary);
   height: 50px;
+  border: 2px solid transparent;
+  outline: none;
+  padding: 8px 35px 8px 16px;
+  &:focus {
+    border: 2px solid var(--color-accented);
+  }
 }

@@ -14,11 +14,13 @@ export const AppInput = ({
   ...otherPoprs
 }: AppInputProps) => {
   return (
-    <input
-      {...otherPoprs}
-      type={type}
-      placeholder={placeholder}
-      className={[s.appInput, className].filter(Boolean).join(" ")}
-    />
+    <div className={`${s.appInputContainer}`}>
+      <input
+        {...otherPoprs}
+        type={type}
+        placeholder={placeholder}
+        className={[s.appInput, className].filter(Boolean).join(" ")}
+      />
+    </div>
   );
 };
