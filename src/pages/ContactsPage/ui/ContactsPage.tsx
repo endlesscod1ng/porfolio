@@ -1,5 +1,6 @@
 import { Page } from "@/shared/layouts/Page/Page";
 import s from "./ContactsPage.module.scss";
+import { Contacts } from "@/widgets/Contacts/Contacts";
 
 interface ContactsPageProps {
   className?: string;
@@ -8,7 +9,7 @@ interface ContactsPageProps {
 export const ContactsPage = ({ className }: ContactsPageProps) => {
   return (
     <Page className={[s.contactsPage, className].filter(Boolean).join(" ")}>
-      <div>ContactsPage</div>
+      <Contacts />
     </Page>
   );
 };

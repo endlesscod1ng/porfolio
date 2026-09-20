@@ -1,5 +1,6 @@
 .header {
   height: var(--header-height);
+  z-index: 1000;
 
   background: var(--color-bg-secondary);
   color: rgb(19, 30, 43);

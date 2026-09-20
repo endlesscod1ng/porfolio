@@ -4,7 +4,7 @@ import s from "./HomePage.module.scss";
 import { Price } from "@/widgets/Price/Price";
 import { Reviews } from "@/widgets/Reviews/Reviews";
 import { Projects } from "@/widgets/Projects/Projects";
-import { Contacts } from "@/widgets/Contacts";
+import { Contacts } from "@/widgets/Contacts/Contacts";
 import { Page } from "@/shared/layouts/Page/Page";
 import { Stack } from "@/widgets/Stack/Stack";
 
