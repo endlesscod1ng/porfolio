@@ -18,27 +18,19 @@ export const Contacts = ({ className }: ContactsProps) => {
           action=""
           // onChange={(e) => e.preventDefault()}
         >
-          <label htmlFor="">Your Full Name ( Required)</label>
           <AppInput
-            type="text"
-            placeholder="Your Full Name ( Required)"
+            label="Your Full Name ( Required)"
+            placeholder="Your Name"
+            required
           />
 
-          <label htmlFor="">Your Email ( Required)</label>
           <AppInput
-            type="text"
-            placeholder="Your Email ( Required)"
+            label="Your Email (Required)"
+            placeholder="Your Email "
           />
 
-          <label htmlFor="">Subject</label>
           <AppInput
-            type="text"
-            placeholder="Subject"
-          />
-
-          <label htmlFor="">Your Message</label>
-          <AppInput
-            type="text"
+            label={"Your Message"}
             placeholder="Your Message"
           />
           <AppButton

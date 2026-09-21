@@ -2,6 +2,12 @@
 @import url("./themes/light.scss");
 @import url("./variables.scss");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 p,
 h1,
 h2,
@@ -17,10 +23,6 @@ html,
 #root,
 body,
 .app {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-
   min-height: 100vh;
   width: 100%;
   min-width: 320px;

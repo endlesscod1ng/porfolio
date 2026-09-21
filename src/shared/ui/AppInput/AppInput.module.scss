@@ -1,6 +1,12 @@
 .appInputContainer {
+  position: relative;
+}
+.errorMessage {
+  position: absolute;
 }
 .appInput {
+  margin-top: 16px;
+  width: 100%;
   // align-self: ;
   background: var(--color-bg-primary);
   height: 50px;
